@@ -103,7 +103,7 @@ var message = (testArrayFirst + ',' + testArraySecond + ',' + testArrayThird +
 ' was passed in as an array of numbers, and ' + sumTotal + ' is their sum.');
 var output = [sumTotal, message];
 console.log(output);
-result output;
+return output;
 }
 
 // Here is the test for sumArray(); uncomment it to run it
