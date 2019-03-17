@@ -94,15 +94,15 @@ function sumArray(sumArr) { //eslint-disable-line
 var testArrayFirst = testArray[0];
 var testArraySecond = testArray[1];
 var testArrayThird = testArray[2];
-console.log(testArray);
+//console.log(testArray);
 var sumTotalArray = sumAndMultiply(testArrayFirst, testArraySecond, testArrayThird);
-console.log(sumTotalArray);
+//console.log(sumTotalArray);
 var sumTotal = sumTotalArray[0];
-console.log(sumTotal);
+//console.log(sumTotal);
 var message = (testArrayFirst + ',' + testArraySecond + ',' + testArrayThird + 
 ' was passed in as an array of numbers, and ' + sumTotal + ' is their sum.');
 var output = [sumTotal, message];
-console.log(output);
+//console.log(output);
 return output;
 }
 
@@ -124,11 +124,22 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+  var testArrayFirst = testArray[0];
+  var testArraySecond = testArray[1];
+  var testArrayThird = testArray[2];
+  //console.log(testArray);
+  var sumTotalArray = sumAndMultiply(testArrayFirst, testArraySecond, testArrayThird);
+  //console.log(sumTotalArray);
+  var sumTotal = sumTotalArray[1];
+  //console.log(sumTotal);
+  var message = ('The numbers ' + testArrayFirst + ',' + testArraySecond + ',' + testArrayThird + ' have a product of ' + sumTotal +'.');
+  var output = [sumTotal, message];
+  //console.log(output);
+  return output;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
